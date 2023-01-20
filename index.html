@@ -96,7 +96,7 @@
                 </div> <!-- mk-item -->
 
                 <div class="mk-item">
-                    <a href="https://write.imsyy.top/" target="_blank">
+                    <a href="https://write.tutuxka.eu.org/" target="_blank">
                         <article class="mk-color-item color1">
                             <div class="item-logo">
                                 <i class="fab fa-markdown" aria-hidden="true"></i>
@@ -109,7 +109,7 @@
                 </div> <!-- mk-item -->
 
                 <div class="mk-item">
-                    <a href="https://qr.imsyy.top/" target="_blank">
+                    <a href="#" target="_blank">
                         <article class="mk-color-item color2">
                             <div class="item-logo">
                                 <i class="fa fa-qrcode" aria-hidden="true"></i>
@@ -122,12 +122,12 @@
                 </div> <!-- mk-item -->
 
                 <div class="mk-item">
-                    <a href="https://pan.imsyy.top/" target="_blank">
+                    <a href="#" target="_blank">
                         <article class="mk-color-item color1">
                             <div class="item-logo">
                                 <i class="fa fa-cloud" aria-hidden="true"></i>
                             </div>
-                            <h3>無名の资源库</h3>
+                            <h3>兔兔の资源库</h3>
                             <p>一个资源文件分享站</p>
                             <i class="light"></i>
                         </article>
@@ -135,12 +135,12 @@
                 </div> <!-- mk-item -->
 
                 <div class="mk-item">
-                    <a href="https://player.imsyy.top/" target="_blank">
+                    <a href="https://music.tutuxka.eu.org/" target="_blank">
                         <article class="mk-color-item color2">
                             <div class="item-logo">
                                 <i class="fas fa-turntable" aria-hidden="true"></i>
                             </div>
-                            <h3>無名の播放器</h3>
+                            <h3>兔兔の播放器</h3>
                             <p>又一个漂亮的网页播放器</p>
                             <i class="light"></i>
                         </article>
@@ -148,13 +148,13 @@
                 </div> <!-- mk-item -->
 
                 <div class="mk-item">
-                    <a href="https://status.imsyy.top/" target="_blank">
+                    <a href="https://status.tutuxka.eu.org/" target="_blank">
                         <article class="mk-color-item color6">
                             <div class="item-logo">
                                 <i class="fa fa-monitor-heart-rate" aria-hidden="true"></i>
                             </div>
                             <h3>站点监测</h3>
-                            <p>监测站点是否可以正常运行</p>
+                            <p>看下网站还活着吗？</p>
                             <i class="light"></i>
                         </article>
                     </a>
@@ -492,7 +492,7 @@
             <p>本站样式来源自 <a href="http://lab.mkblog.cn/" target="_blank">孟坤 Web 实验室</a> 并做出了些许修改。
                 此「 实验室 」中的大部分作品是开源的，即使没有开源，您也可以通过查看源代码以进行查阅。请注意，开源不代表可以滥用，转载或使用这些源代码时，请务必保留原始的版权信息！
                 这是一个程序员最基本的修养，也是对原作者最起码的尊重。</p>
-            <p>更多内容，请访问我的 <a href="https://imsyy.top" target="_blank">个人主页</a> 或 <a href="https://blog.imsyy.top"
+            <p>更多内容，请访问我的 <a href="https://home.tutuxka.eu.org/" target="_blank">个人主页</a> 或 <a href="https://blog.tutuxka.eu.org/"
                     target="_blank">个人博客</a>。</p>
         </div>
         </section>
@@ -501,9 +501,9 @@
 
     <footer class="footer">
         <div class="web-record">
-            <a href="https://imsyy.top/" target="_blank" rel="nofollow">
-                Copyright © 2020
-                <script>document.write(' - ' + (new Date()).getFullYear())</script> 無名
+            <a href="https://home.tutuxka.eu.org/" target="_blank" rel="nofollow">
+                Copyright © 2023
+                <script>document.write(' - ' + (new Date()).getFullYear())</script> 兔兔
             </a>
         </div>
     </footer>
@@ -566,40 +566,6 @@
                     default: return 0;
                 }
             }
-        </script>
-        <!--SweetAlert弹窗-->
-        <script>
-            let timerInterval
-            Swal.fire({
-                icon: 'info',
-                title: '维护通知',
-                text: '本站维护更新中，敬请期待',
-                html:
-                    '本站维护更新中，敬请期待<br><br>' +
-                    '本窗口将在 <b></b> 毫秒后关闭',
-                timer: 4000,
-                timerProgressBar: true,
-                didOpen: () => {
-                    Swal.showLoading()
-                    timerInterval = setInterval(() => {
-                        const content = Swal.getContent()
-                        if (content) {
-                            const b = content.querySelector('b')
-                            if (b) {
-                                b.textContent = Swal.getTimerLeft()
-                            }
-                        }
-                    }, 100)
-                },
-                willClose: () => {
-                    clearInterval(timerInterval)
-                }
-            }).then((result) => {
-                /* Read more about handling dismissals below */
-                if (result.dismiss === Swal.DismissReason.timer) {
-                    console.log('I was closed by the timer')
-                }
-            })
         </script>
         <!--引入izitoast-->
         <script>
